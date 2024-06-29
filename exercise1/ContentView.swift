@@ -9,13 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ScrollView{
+            VStack{
+                HStack{
+                    VStack(alignment: .listRowSeparatorLeading){
+                        Text("Hobbies")
+                            .font(.system(size: 28, weight: .bold))
+                            .padding(Edge.Set(.bottom), 2)
+                        Text("What is your hobby?")
+                            .font(.system(size: 20))
+                    }
+                    Spacer()
+                    Image(.proflePict)
+                        .resizable()
+                        .frame(width: 60, height: 60).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                }
+            }
+        }.safeAreaPadding()
     }
 }
 
