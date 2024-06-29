@@ -11,6 +11,7 @@
 		3DA696BD2C30BA4C008DD935 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA696BC2C30BA4C008DD935 /* ContentView.swift */; };
 		3DA696BF2C30BA4E008DD935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA696BE2C30BA4E008DD935 /* Assets.xcassets */; };
 		3DA696C22C30BA4E008DD935 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA696C12C30BA4E008DD935 /* Preview Assets.xcassets */; };
+		3DA696CA2C30CFA1008DD935 /* HobbyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA696C92C30CFA1008DD935 /* HobbyCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3DA696BC2C30BA4C008DD935 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3DA696BE2C30BA4E008DD935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA696C12C30BA4E008DD935 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DA696C92C30CFA1008DD935 /* HobbyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3DA696BA2C30BA4C008DD935 /* exercise1App.swift */,
 				3DA696BC2C30BA4C008DD935 /* ContentView.swift */,
+				3DA696C92C30CFA1008DD935 /* HobbyCard.swift */,
 				3DA696C82C30BC82008DD935 /* Resources */,
 				3DA696C02C30BA4E008DD935 /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA696CA2C30CFA1008DD935 /* HobbyCard.swift in Sources */,
 				3DA696BD2C30BA4C008DD935 /* ContentView.swift in Sources */,
 				3DA696BB2C30BA4C008DD935 /* exercise1App.swift in Sources */,
 			);

@@ -25,39 +25,31 @@ struct ContentView: View {
                         .frame(width: 60, height: 60).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                 }.padding(.bottom,  12)
                 HStack{
-                    ZStack{
-                        Color.blue
-                        VStack{                            
-                            Image(.bus)
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                            Text("Travelling")
-                                .font(.system(size: 24, weight: .bold))
-                                .foregroundColor(.white)
-                                .padding(.top, 12)
-                            Text("Plain, ride, road trip")
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                        }.padding(.vertical, 40).padding(.horizontal, 12)
-                    }.cornerRadius(10)
-                    ZStack{
-                        Color.green
-                        VStack{
-                            Image(.cam).resizable().frame(width: 40, height: 40)
-                            Text("Photography")
-                                .font(.system(size: 24, weight: .bold))
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .padding(.top, 12)
-                            Text("Iphone, Canon")
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.white)
-                        }.padding(.vertical, 40).padding(.horizontal, 12)
-                    }.cornerRadius(10)
+                    HobbyCard(
+                        backgroundColor: Color.blue,
+                        imgPath: "bus",
+                        imgWidth: 40,
+                        title: "Travelling",
+                        subtitle: "Plain, ride, road trip",
+                        padding: EdgeInsets(top: 60, leading: 12, bottom: 30, trailing: 12)
+                    )
+                    HobbyCard(
+                        backgroundColor: Color.green,
+                        imgPath: "cam",
+                        imgWidth: 40,
+                        title: "Photography",
+                        subtitle: "Iphone, Canon",
+                        padding: EdgeInsets(top: 60, leading: 12, bottom: 30, trailing: 12)
+                    )
                 }
-                ZStack{
-                    Color.red
-                    VStack{
+                HobbyCard(
+                    backgroundColor: Color.red,
+                    imgPath: "book",
+                    imgWidth: 60,
+                    title: "Reading",
+                    subtitle: "Novel, Astronomy, Physic",
+                    padding: EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0),
+                    additionalItem: AnyView(
                         HStack{
                             Spacer()
                             Text("Recomennded")
@@ -65,38 +57,17 @@ struct ContentView: View {
                                 .background(Color.yellow)
                                 .cornerRadius(10)
                         }
-                            Image(.book)
-                            .resizable()
-                            .frame(width: 60, height: 60)
-                        Text("Reading")
-                            .font(.system(size: 24, weight: .bold))
-                            .foregroundColor(.white)
-                            .padding(.top, 12)
-                        Text("Novel, Astronomy, Physic")
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(.white)
-                            .padding(.bottom, 30)
-                    }
-                    
-                }.cornerRadius(10)
-                ZStack{
-                    Color.gray
-                    VStack{
-                        Image(.swim)
-                            .resizable()
-                            .frame(width: 60, height: 60)
-                        Text("Swimming")
-                            .font(.system(size: 24, weight: .bold))
-                            .foregroundColor(.white)
-                            .padding(.top, 12)
-                        Text("Pool, Ocean, River")
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(.white)
-                    }.padding(.vertical, 40)
-                }.cornerRadius(20)
-                
+                    )
+                )
+                HobbyCard(
+                    backgroundColor: Color.gray,
+                    imgPath: "swim",
+                    imgWidth: 60,
+                    title: "Swimming",
+                    subtitle: "Pool, Ocean, River",
+                    padding: EdgeInsets(top: 60, leading: 12, bottom: 30, trailing: 12)
+                )
             }
-                        
             
         }.safeAreaPadding()
     }
