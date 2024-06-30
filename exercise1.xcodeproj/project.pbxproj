@@ -13,6 +13,7 @@
 		3DA696C22C30BA4E008DD935 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA696C12C30BA4E008DD935 /* Preview Assets.xcassets */; };
 		3DA696CA2C30CFA1008DD935 /* HobbyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA696C92C30CFA1008DD935 /* HobbyCard.swift */; };
 		5302FF3F2C30DEAD00D93F3A /* JustifyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5302FF3E2C30DEAD00D93F3A /* JustifyText.swift */; };
+		5302FF422C30E25F00D93F3A /* JustifyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5302FF412C30E25F00D93F3A /* JustifyTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		3DA696C12C30BA4E008DD935 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DA696C92C30CFA1008DD935 /* HobbyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyCard.swift; sourceTree = "<group>"; };
 		5302FF3E2C30DEAD00D93F3A /* JustifyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifyText.swift; sourceTree = "<group>"; };
+		5302FF412C30E25F00D93F3A /* JustifyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifyTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		3DA696B92C30BA4C008DD935 /* exercise1 */ = {
 			isa = PBXGroup;
 			children = (
+				5302FF402C30E16200D93F3A /* Remarks */,
 				5302FF3D2C30DE9300D93F3A /* Utility */,
 				5302FF3B2C30DE1200D93F3A /* App */,
 				5302FF3C2C30DE1A00D93F3A /* View */,
@@ -103,6 +106,14 @@
 				5302FF3E2C30DEAD00D93F3A /* JustifyText.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		5302FF402C30E16200D93F3A /* Remarks */ = {
+			isa = PBXGroup;
+			children = (
+				5302FF412C30E25F00D93F3A /* JustifyTextView.swift */,
+			);
+			path = Remarks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 				3DA696BD2C30BA4C008DD935 /* ContentView.swift in Sources */,
 				3DA696BB2C30BA4C008DD935 /* exercise1App.swift in Sources */,
 				5302FF3F2C30DEAD00D93F3A /* JustifyText.swift in Sources */,
+				5302FF422C30E25F00D93F3A /* JustifyTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
