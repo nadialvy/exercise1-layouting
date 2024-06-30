@@ -12,6 +12,7 @@
 		3DA696BF2C30BA4E008DD935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA696BE2C30BA4E008DD935 /* Assets.xcassets */; };
 		3DA696C22C30BA4E008DD935 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA696C12C30BA4E008DD935 /* Preview Assets.xcassets */; };
 		3DA696CA2C30CFA1008DD935 /* HobbyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA696C92C30CFA1008DD935 /* HobbyCard.swift */; };
+		5302FF3F2C30DEAD00D93F3A /* JustifyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5302FF3E2C30DEAD00D93F3A /* JustifyText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		3DA696BE2C30BA4E008DD935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA696C12C30BA4E008DD935 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DA696C92C30CFA1008DD935 /* HobbyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyCard.swift; sourceTree = "<group>"; };
+		5302FF3E2C30DEAD00D93F3A /* JustifyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifyText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +55,9 @@
 		3DA696B92C30BA4C008DD935 /* exercise1 */ = {
 			isa = PBXGroup;
 			children = (
-				3DA696BA2C30BA4C008DD935 /* exercise1App.swift */,
-				3DA696BC2C30BA4C008DD935 /* ContentView.swift */,
-				3DA696C92C30CFA1008DD935 /* HobbyCard.swift */,
+				5302FF3D2C30DE9300D93F3A /* Utility */,
+				5302FF3B2C30DE1200D93F3A /* App */,
+				5302FF3C2C30DE1A00D93F3A /* View */,
 				3DA696C82C30BC82008DD935 /* Resources */,
 				3DA696C02C30BA4E008DD935 /* Preview Content */,
 			);
@@ -76,6 +78,31 @@
 				3DA696BE2C30BA4E008DD935 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5302FF3B2C30DE1200D93F3A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3DA696BA2C30BA4C008DD935 /* exercise1App.swift */,
+				3DA696BC2C30BA4C008DD935 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5302FF3C2C30DE1A00D93F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DA696C92C30CFA1008DD935 /* HobbyCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5302FF3D2C30DE9300D93F3A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5302FF3E2C30DEAD00D93F3A /* JustifyText.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +178,7 @@
 				3DA696CA2C30CFA1008DD935 /* HobbyCard.swift in Sources */,
 				3DA696BD2C30BA4C008DD935 /* ContentView.swift in Sources */,
 				3DA696BB2C30BA4C008DD935 /* exercise1App.swift in Sources */,
+				5302FF3F2C30DEAD00D93F3A /* JustifyText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
