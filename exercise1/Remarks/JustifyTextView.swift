@@ -21,7 +21,6 @@ struct JustifyTextView: View {
         /// that we already created.
         /// Easy peasy
         JustifyText(text: text)
-            .frame(maxWidth: .infinity)
             .padding()
     }
 }
